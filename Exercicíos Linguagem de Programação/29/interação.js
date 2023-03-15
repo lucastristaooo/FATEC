@@ -3,26 +3,19 @@ function calcular(){
     resposta.innerHTML = " "
     var total = 0
     var total2 = 0
-    var total3 = 0
-    var total4 = 0
-    for(var c = 1; c <= 5; c++){
-        var idade = prompt("Digite a idade: ")
-        var peso = prompt("Digite o peso: ")
-        var altura = prompt("Digite a ultura: ")
-        if(Number(idade) > 50){
-            total += 1
+    for(var c = 1; c <= 10; c++){
+        var valor = prompt("Digite o valor: ")
+        if(valor % 2 == 0){
+            total += Number(valor)
         }
-        else if(Number(idade) >= 10 && Number(idade) <= 20){
-            total2 += idade
-            total4 += 1
+        else{
+            total2 += Number(valor)
         }
-        else if(Number(peso) < 40){
-            total3 += 1
-        }
+    var totaltudo = Number(total) + Number(total2)
+    resposta.innerHTML = `Total dos números pares ${total} <br>`
+    resposta.innerHTML += `Total dos números primos ${total2} <br>`
+    resposta.innerHTML += `Total tudo ${totaltudo} <br>`
     }
-    resposta.innerHTML = `Pessoas com mais de 50 anos = ${Number(total)} <br>`
-    resposta.innerHTML += `Média de altura entre pessoas com 10 e 20 anos = ${total2 / total4} <br>`
-    resposta.innerHTML += `Porcentagem de pessoas com peso inferior a 40kg = ${5 / total3}% <br>`
 }
 
     
