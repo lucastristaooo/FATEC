@@ -1,5 +1,5 @@
 function calcular(){
-    var salário = document.getElementById("n1")
+    var n1 = document.getElementById("n1")
     var resposta = document.getElementById("resposta")
     if(Number(n1.value) <= 12000 && Number(n1.value) <= 300){
         resposta.innerHTML = `Preço a ser cobrado: ${(Number(n1.value) * 0.5) + Number(n1.value)}`
