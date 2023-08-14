@@ -2,6 +2,7 @@ function iniciar(){
     var vetor = []
     let somai = 0
     let somap = 0
+    let somatudo = 0
     var tamanho = 0
     do{
         var x = prompt("1.Inserir elementos 2.Remover elementos 3.Somar elementos 4.Somar valores entre")
@@ -42,7 +43,12 @@ function iniciar(){
             } 
         }
         if(x == 4){
-            break
+            var i = prompt("Digite o primeiro valor: ")
+            var z = prompt("Digite o segundo valor: ")
+            for(i; i <= z; i++){
+                somatudo += Number(vetor[i])
+            }
+            alert(somatudo)
         }
     }while(x != 5)
     alert(vetor)
